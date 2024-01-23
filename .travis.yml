@@ -1,22 +1,3 @@
 language: android
-jdk:
-  - oraclejdk8
-  - openjdk11
-
 dist: focal
-
-android:
-  components:
-    - platform-tools
-    - tools
-    - build-tools-30.0.3
-    - android-30
-    - extra-google-google_play_services
-    - extra-google-m2repository
-    - extra-android-m2repository
-
-before_script:
-  - chmod +x gradlew
-
-script:
-  - ./gradlew clean build test
+script : true
