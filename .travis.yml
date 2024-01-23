@@ -1,0 +1,20 @@
+language: android
+jdk: openjdk11
+
+android:
+  components:
+    - platform-tools
+    - tools
+    - build-tools-30.0.3
+    - android-30
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+
+before_install:
+  - chmod +x gradlew
+
+script:
+  - ./gradlew clean build
+  - ./gradlew test
+  - ./gradlew build
