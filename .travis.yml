@@ -11,10 +11,8 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
 
-before_install:
+before_script:
   - chmod +x gradlew
 
 script:
-  - ./gradlew clean build
-  - ./gradlew test
-  - ./gradlew build
+  - ./gradlew clean build test
